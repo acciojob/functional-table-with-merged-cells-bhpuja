@@ -1,1 +1,52 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid orange;
+    padding: 3px 5px;
+    text-align: left;
+}
+
+th {
+    background-color: #888;
+    color: #fff;
+}
+
+.subTotalRow td {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.subTotalRow .right-align {
+    text-align: right;
+}
+
+td {
+    border-bottom: 2px solid orange;
+    border-right: 2px solid orange;
+}

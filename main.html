@@ -3,117 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Functional Table</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid orange;
-            padding: 3px 5px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #888;
-            color: #fff;
-        }
-
-        .subTotalRow td:last-child,
-        .subTotalRow td:nth-last-child(2) {
-            text-align: right;
-        }
-
-        table tr th:last-child,
-        table tr td:last-child {
-            border-right: 3px solid orange;
-        }
-
-        table tr:last-child td {
-            border-bottom: 3px solid orange;
-        }
-    </style>
+    <title>Functional Table with Merged Cells</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Firm</th>
-                <th>Org</th>
-                <th>Lob</th>
-                <th>Sub Lob</th>
-                <th>Business Plans</th>
-                <th>Business Components</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="4">Firm A</td>
-                <td rowspan="2">Org 1</td>
-                <td rowspan="1">Lob 1</td>
-                <td>Sub Lob A</td>
-                <td>Plan 1</td>
-                <td>Component 1</td>
-            </tr>
-            <tr>
-                <td>Lob 1</td>
-                <td>Sub Lob B</td>
-                <td>Plan 2</td>
-                <td>Component 2</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Org 2</td>
-                <td>Lob 2</td>
-                <td>Sub Lob C</td>
-                <td>Plan 3</td>
-                <td>Component 3</td>
-            </tr>
-            <tr>
-                <td>Lob 2</td>
-                <td>Sub Lob D</td>
-                <td>Plan 4</td>
-                <td>Component 4</td>
-            </tr>
-            <tr class="subTotalRow">
-                <td colspan="4">Sub Total for Firm A</td>
-                <td>Plan Total</td>
-                <td>Component Total</td>
-            </tr>
-            <tr>
-                <td rowspan="4">Firm B</td>
-                <td rowspan="2">Org 3</td>
-                <td>Lob 3</td>
-                <td>Sub Lob E</td>
-                <td>Plan 5</td>
-                <td>Component 5</td>
-            </tr>
-            <tr>
-                <td>Lob 3</td>
-                <td>Sub Lob F</td>
-                <td>Plan 6</td>
-                <td>Component 6</td>
-            </tr>
-            <tr>
-                <td rowspan="2">Org 4</td>
-                <td>Lob 4</td>
-                <td>Sub Lob G</td>
-                <td>Plan 7</td>
-                <td>Component 7</td>
-            </tr>
-            <tr>
-                <td>Lob 4</td>
-                <td>Sub Lob H</td>
-                <td>Plan 8</td>
-                <td>Component 8</td>
-            </tr>
-            <tr class="subTotalRow">
-                <td colspan="4">Sub Total for Firm B</td>
-                <td>Plan Total</td>
-                <td>Component Total</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <h1>Functional Table with Merged Cells</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firm</th>
+                    <th>Org</th>
+                    <th>Lob</th>
+                    <th>Sub Lob</th>
+                    <th>Business Plans</th>
+                    <th>Business Components</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Firm A</td>
+                    <td rowspan="2">Org 1</td>
+                    <td>Lob 1</td>
+                    <td>Sub Lob 1</td>
+                    <td>Plan 1</td>
+                    <td>Component 1</td>
+                </tr>
+                <tr>
+                    <td>Lob 1</td>
+                    <td>Sub Lob 2</td>
+                    <td>Plan 2</td>
+                    <td>Component 2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Org 2</td>
+                    <td>Lob 2</td>
+                    <td>Sub Lob 3</td>
+                    <td>Plan 3</td>
+                    <td>Component 3</td>
+                </tr>
+                <tr>
+                    <td>Lob 2</td>
+                    <td>Sub Lob 4</td>
+                    <td>Plan 4</td>
+                    <td>Component 4</td>
+                </tr>
+                <tr class="subTotalRow">
+                    <td colspan="4">Sub Total for Firm A</td>
+                    <td class="right-align">Plan Total</td>
+                    <td class="right-align">Component Total</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Firm B</td>
+                    <td rowspan="2">Org 3</td>
+                    <td>Lob 3</td>
+                    <td>Sub Lob 5</td>
+                    <td>Plan 5</td>
+                    <td>Component 5</td>
+                </tr>
+                <tr>
+                    <td>Lob 3</td>
+                    <td>Sub Lob 6</td>
+                    <td>Plan 6</td>
+                    <td>Component 6</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Org 4</td>
+                    <td>Lob 4</td>
+                    <td>Sub Lob 7</td>
+                    <td>Plan 7</td>
+                    <td>Component 7</td>
+                </tr>
+                <tr>
+                    <td>Lob 4</td>
+                    <td>Sub Lob 8</td>
+                    <td>Plan 8</td>
+                    <td>Component 8</td>
+                </tr>
+                <tr class="subTotalRow">
+                    <td colspan="4">Sub Total for Firm B</td>
+                    <td class="right-align">Plan Total</td>
+                    <td class="right-align">Component Total</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
